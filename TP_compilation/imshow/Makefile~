@@ -1,0 +1,14 @@
+CXXFLAGS = -std=c++11 -Wall -Wextra
+
+
+module1.o : module1.cpp module1.hpp
+	g++ -std=c++11 -Wall -Wextra -c module1.hpp module1.cpp
+
+sayHello.o : sayHello.c
+	g++ -std=c++11 -Wall -Wextra -c sayHello.cpp
+
+sayHello.out : sayHello.o module1.o
+	g++ -std=c++11 -Wall -Wextra -o sayHello.out sayHello.o module1.o
+
+clean :
+	rm -rf *.o *.out  
