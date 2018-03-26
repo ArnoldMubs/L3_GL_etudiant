@@ -17,14 +17,14 @@ Drunk_player utilise la bibliothèque de traitement d'image OpenCV et est compos
 * Boost
 
 ## Compilation 
-	mkdit build
-	cd build
+	<font color="blue">mkdir</font> build
+	**cd** build
 	cmake ..
-	make
+	**make**
 
 ## Utilisation
 
-./drunk_player_gui.out ../data/ 
+./drunk_player_gui.out ../**data**/ 
 
 ![Image of gui](./drunk_player_gui.png)
 
